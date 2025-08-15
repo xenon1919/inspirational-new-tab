@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Inspirational Tab — Hybrid Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="newtab.css"/>
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div id="bg" class="bg-image"></div>
+  <div class="vignette"></div>
+
+  <main class="container">
+    <header class="topbar">
+      <div class="left">
+        <div class="clock" id="clock">--:--</div>
+        <div class="greeting" id="greeting">Hello!</div>
+      </div>
+      <div class="right">
+        <button id="refresh" class="btn ghost" title="New quote & background">↻</button>
+        <button id="fav" class="btn ghost" title="Save to Favorites">♡</button>
+        <button id="openSettings" class="btn" title="Settings">⚙</button>
+      </div>
+    </header>
+
+    <section class="quote-card">
+      <p class="quote" id="quote">Loading inspiration…</p>
+      <p class="author" id="author"></p>
+      <div class="actions">
+        <button id="copy" class="btn">Copy</button>
+        <button id="share" class="btn ghost">Share</button>
+        <button id="seeFavs" class="btn ghost">Favorites</button>
+      </div>
+    </section>
+  </main>
+
+  <aside id="settings" class="settings hidden">
+    <div class="settings-inner">
+      <div class="settings-header">
+        <h2>Settings</h2>
+        <button id="closeSettings" class="btn ghost">✕</button>
+      </div>
+
+      <label class="field">
+        <span>Your name</span>
+        <input id="nameInput" type="text" placeholder="e.g., Rishi"/>
+      </label>
+
+      <div class="field">
+        <span>Daily Mode</span>
+        <label class="switch">
+          <input id="dailyToggle" type="checkbox"/>
+          <span class="slider"></span>
+        </label>
+        <small>Keep the same quote & background for the day</small>
+      </div>
+
+      <div class="field">
+        <span>Mode</span>
+        <div class="chips" id="modeChips">
+          <!-- JS toggles: offline / online / auto -->
+        </div>
+        <small>Auto uses online sources when available, falls back to offline</small>
+      </div>
+
+      <div class="field">
+        <span>Quote tags</span>
+        <div class="chips" id="quoteTags"></div>
+        <small>Used for filtering online & offline quotes</small>
+      </div>
+
+      <div class="field">
+        <span>Background themes</span>
+        <div class="chips" id="imageTags"></div>
+      </div>
+
+      <div class="settings-actions">
+        <button id="saveSettings" class="btn">Save</button>
+        <button id="resetDefaults" class="btn ghost">Reset</button>
+      </div>
+    </div>
+  </aside>
+
+  <aside id="favorites" class="favorites hidden">
+    <div class="favorites-inner">
+      <div class="settings-header">
+        <h2>Favorites</h2>
+        <button id="closeFavs" class="btn ghost">✕</button>
+      </div>
+      <div id="favList" class="fav-list"></div>
+    </div>
+  </aside>
+
+  <script src="newtab.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Inspirational Tab \u2014 Hybrid Pro",
+  "version": "3.0.0",
+  "description": "Beautiful new tab with offline+online quotes/backgrounds, favorites, daily mode, and settings.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage"
+  ]
+}
