@@ -1,8 +1,10 @@
+# Inspirational New Tab 🌈
 
-# Load into Chrome
-1) Open `chrome://extensions/`
-2) Enable **Developer mode**
-3) Click **Load unpacked** and select this folder
-4) Open a new tab
+A vibrant Chrome extension that turns your new tab into a source of positivity with random inspirational quotes, colorful themes, offline/online backgrounds, and a live weather widget.
 
-Tips: Use the ⚙ settings to switch Online/Offline/Auto modes.
+## ✨ Features
+- 📝 **Inspirational Quotes** — Offline + online source for fresh content.
+- 🌈 **Random Color Themes** — 20+ beautiful palettes.
+- 🖼 **Dynamic Backgrounds** — HD images (online) or bundled offline art.
+- 🌤 **Weather Widget** — Shows your local temperature and location.
+- ⚡ **Offline Support** — Works even without internet.
